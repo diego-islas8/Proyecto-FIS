@@ -12,7 +12,7 @@ ___
 ---
 ## 🧾 Descripción del proyecto
 
-El presente proyecto presenta la idea del desarrollo de una aplicación web de chatbot que fungirá como asistente virtual proporcionando respuestas rápidas y precisas a preguntas frecuentes, con el propósito de mejorar el acceso a la información para estudiantes, docentes y personal administrativo de la Universidad Autónoma de Yucatán (UADY).
+El presente proyecto consiste en el desarrollo de una aplicación web de chatbot que fungirá como asistente virtual proporcionando respuestas rápidas y precisas a preguntas frecuentes con el propósito de mejorar el acceso a la información para estudiantes, docentes y personal administrativo de la Universidad Autónoma de Yucatán (UADY).
 
 ___
 # 🎯 Requisitos
