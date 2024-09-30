@@ -2,17 +2,18 @@
 
 # 🚀 Chatbot UADY -> 
 ___
-## Indice
+## Índice
 - [🚀 Chatbot UADY -\>](#-chatbot-uady--)
-  - [Indice](#indice)
   - [🧾 Descripción del proyecto](#-descripción-del-proyecto)
-- [🎯 Requisitos](#-requisitos)
-  - [✅ Requisitos funcionales](#-requisitos-funcionales)
-  - [❓ Requisitos no funcionales](#-requisitos-no-funcionales)
+  - [🎯 Requisitos](#-requisitos)
+    - [✅ Requisitos funcionales](#-requisitos-funcionales)
+    - [❓ Requisitos no funcionales](#-requisitos-no-funcionales)
 
 ---
 ## 🧾 Descripción del proyecto
-- 
+
+El presente proyecto presenta la idea del desarrollo de una aplicación web de chatbot que fungirá como asistente virtual proporcionando respuestas rápidas y precisas a preguntas frecuentes, con el propósito de mejorar el acceso a la información para estudiantes, docentes y personal administrativo de la Universidad Autónoma de Yucatán (UADY).
+
 ___
 # 🎯 Requisitos
 
@@ -20,7 +21,7 @@ ___
 - 🟢 **RF-01:** El sistema se conectará con las cuentas institucionales de los estudiantes para acceder a sus datos.
 - 🟢 **RF-02:** El chatbot debera ser capaz de mantener el contexto de las preguntas para que no sea necesario repetir informacion.
 - 🟢 **RF-03:** El chatbot podrá aclarar cualquier duda referente a lo académico, desde como funciona el sistema de acreditación de asignaturas hasta el como se realizan ciertos trámites.
-- 🟢 **RF-04:** el chatbot podra detectar el idioma español ,maya e ingles y responder de acuerdo a las necesidades en ese lenguaje.
+- 🟢 **RF-04:** el chatbot podra detectar el idioma español, maya e ingles y responder de acuerdo a las necesidades en ese lenguaje.
 - 🟢 **RF-05:** Las respuestas del chatbot siempre tendran que ser correctas y actualizadas en caso de haber algun cambio en los lineamientos de la institucion.
 - 🟢 **RF-06:** El sistema del ChatBot podrá guardar cada plática hecha con los usuarios para consultas posteriores por parte del personal administrativo de ser necesario.
 
