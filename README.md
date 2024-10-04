@@ -38,5 +38,5 @@ ___
 - 🟠 **RNF-06:** La interfaz de dialogo será igual a la de un chat de texto como whatsapp o Messenger y sugerirá preguntas frecuentes
 para que el usuario le haga al ChatBot.
 - 🟠 **RNF-07:** El ChatBot será compatible en distintos dispositivos para ser accesible desde diferentes plataformas.
-- 🟠 **RNF-08** El chat bot debe tener un tiempo de respuesta máximo de 2 segundos para asegurar una experiencia fluida y eficiente para los usuarios.
+- 🟠 **RNF-08** El chat bot debe tener un tiempo de respuesta eficiente para asegurar una experiencia fluida y satisfactoria para los usuarios.
 ---
