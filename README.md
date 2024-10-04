@@ -26,6 +26,7 @@ ___
 - 🟢 **RF-06:** El sistema del ChatBot podrá guardar cada plática hecha con los usuarios para consultas posteriores por parte del personal administrativo de ser necesario.
 - 🟢 **RF-07:** El chat bot dara un tiempo de espera en caso de no poder con el total de usuarios en linea.
 - 🟢 **RF-8:** El chat bot debe permitir a los usuarios enviar y recibir mensajes en tiempo real para resolver dudas sobre cursos y servicios académicos.
+- 🟢 **RF-9:** El chatbot debe poder proporcionar enlaces y resúmenes de recursos académicos, como bibliotecas digitales, artículos de investigación y materiales de estudio, en respuesta a las consultas de los estudiantes.
    
 
    
@@ -39,4 +40,5 @@ ___
 para que el usuario le haga al ChatBot.
 - 🟠 **RNF-07:** El ChatBot será compatible en distintos dispositivos para ser accesible desde diferentes plataformas.
 - 🟠 **RNF-08** El chat bot debe tener un tiempo de respuesta eficiente para asegurar una experiencia fluida y satisfactoria para los usuarios.
+- 🟠 **RNF-09** El sistema debe ser capaz de manejar al menos 1,000 usuarios simultáneos sin degradar el rendimiento, asegurando una experiencia fluida durante picos de demanda, como la época de inscripciones.
 ---
