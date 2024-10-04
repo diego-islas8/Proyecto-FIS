@@ -24,7 +24,8 @@ ___
 - 🟢 **RF-04:** el chatbot podra detectar el idioma español, maya e ingles y responder de acuerdo a las necesidades en ese lenguaje.
 - 🟢 **RF-05:** Las respuestas del chatbot siempre tendran que ser correctas y actualizadas en caso de haber algun cambio en los lineamientos de la institucion.
 - 🟢 **RF-06:** El sistema del ChatBot podrá guardar cada plática hecha con los usuarios para consultas posteriores por parte del personal administrativo de ser necesario.
-- 🟢 **RF-07:** El chat bot dara un tiempo de espera en caso de no poder con el total de usuarios en linea. 
+- 🟢 **RF-07:** El chat bot dara un tiempo de espera en caso de no poder con el total de usuarios en linea.
+- 🟢 **RF-8:** El chat box debe permitir a los usuarios enviar y recibir mensajes en tiempo real para resolver dudas sobre cursos y servicios académicos.
    
 
    
@@ -34,6 +35,8 @@ ___
 - 🟠 **RNF-03:** Contar con la posibilidad de crear distintos chats para abarcar temas distintos a los antes conversados.
 - 🟠 **RNF-04:** Reducir los recursos necesarios para su funcionamiento de forma eficiente.
 - 🟠 **RNF-05:** El chatbot debera estar disponible para el usuario las 24 horas del dia los 7 dias de la semana.
-- 🟠 **RNF-06:** La interfaz de dialogo será igual a la de un chat de texto como whatsapp o Messenger y sugerirá preguntas frecuentes para que el usuario le haga al ChatBot.
+- 🟠 **RNF-06:** La interfaz de dialogo será igual a la de un chat de texto como whatsapp o Messenger y sugerirá preguntas frecuentes
+para que el usuario le haga al ChatBot.
 - 🟠 **RNF-07:** El ChatBot será compatible en distintos dispositivos para ser accesible desde diferentes plataformas.
+- 🟠 **RNF-08** El chat box debe tener un tiempo de respuesta máximo de 2 segundos para asegurar una experiencia fluida y eficiente para los usuarios.
 ---
