@@ -25,8 +25,8 @@ ___
 - 🟢 **RF-05:** Las respuestas del chatbot siempre tendran que ser correctas y actualizadas en caso de haber algun cambio en los lineamientos de la institucion.
 - 🟢 **RF-06:** El sistema del ChatBot podrá guardar cada plática hecha con los usuarios para consultas posteriores por parte del personal administrativo de ser necesario.
 - 🟢 **RF-07:** El chat bot dara un tiempo de espera en caso de no poder con el total de usuarios en linea.
-- 🟢 **RF-8:** El chat bot debe permitir a los usuarios enviar y recibir mensajes en tiempo real para resolver dudas sobre cursos y servicios académicos.
-- 🟢 **RF-9:** El chatbot debe poder proporcionar enlaces y resúmenes de recursos académicos, como bibliotecas digitales, artículos de investigación y materiales de estudio, en respuesta a las consultas de los estudiantes.
+- 🟢 **RF-08:** El chat bot debe permitir a los usuarios enviar y recibir mensajes en tiempo real para resolver dudas sobre cursos y servicios académicos.
+- 🟢 **RF-09:** El chatbot debe poder proporcionar enlaces y resúmenes de recursos académicos, como bibliotecas digitales, artículos de investigación y materiales de estudio, en respuesta a las consultas de los estudiantes.
    
 
    
