@@ -28,6 +28,7 @@ ___
 - 🟢 **RF-08:** El chat bot debe permitir a los usuarios enviar y recibir mensajes en tiempo real para resolver dudas sobre cursos y servicios académicos.
 - 🟢 **RF-09:** El chatbot debe poder proporcionar enlaces y resúmenes de recursos académicos, como bibliotecas digitales, artículos de investigación y materiales de estudio, en respuesta a las consultas de los estudiantes.
 - 🟢 **RF-10:** Poseerá un filtro de comportamiento inapropiado para evitar el uso incorrecto de la herramienta.
+- 🟢 **RF-11:** Los usuarios administrativos tendran una interfaz diferente.
 
    
 ## ❓ Requisitos no funcionales 
@@ -42,4 +43,5 @@ para que el usuario le haga al ChatBot.
 - 🟠 **RNF-08** El chat bot debe tener un tiempo de respuesta eficiente para asegurar una experiencia fluida y satisfactoria para los usuarios.
 - 🟠 **RNF-09** El sistema debe ser capaz de manejar al menos 1,000 usuarios simultáneos sin degradar el rendimiento, asegurando una experiencia fluida durante picos de demanda, como la época de inscripciones.
 - 🟠 **RNF-10:** Dado a la magnitud y escalabilidad del proyecto se requerirá el uso de una base de datos no relacional para la mantener un buen rendimiento del proyecto.
+- 🟠 **RNF-11:** El chat bot comprendera palabras informales ,asi como modismos.
 ---
