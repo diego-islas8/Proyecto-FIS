@@ -33,7 +33,7 @@ ___
 
    
 ## ❓ Requisitos no funcionales 
-- 🟠 **RNF-01:** La lógica del chatbot se desarrollará con el lenguaje de programación Python.
+- 🟠 **RNF-01:** La lógica del chatbot se desarrollará con un lenguaje de alto nivel.
 - 🟠 **RNF-02:** Desarrollar una interfaz de usuario que sea facil de usar.
 - 🟠 **RNF-03:** Contar con la posibilidad de crear distintos chats para abarcar temas distintos a los antes conversados.
 - 🟠 **RNF-04:** Reducir los recursos necesarios para su funcionamiento de forma eficiente.
@@ -43,7 +43,7 @@ para que el usuario le haga al ChatBot.
 - 🟠 **RNF-07:** El ChatBot será compatible en distintos dispositivos para ser accesible desde diferentes plataformas.
 - 🟠 **RNF-08** El chat bot debe tener un tiempo de respuesta eficiente para asegurar una experiencia fluida y satisfactoria para los usuarios.
 - 🟠 **RNF-09** El sistema debe ser capaz de manejar al menos 1,000 usuarios simultáneos sin degradar el rendimiento, asegurando una experiencia fluida durante picos de demanda, como la época de inscripciones.
-- 🟠 **RNF-10:** Dado a la magnitud y escalabilidad del proyecto se requerirá el uso de una base de datos no relacional para la mantener un buen rendimiento del proyecto.
+- 🟠 **RNF-10:** Dado a la magnitud y escalabilidad del proyecto se requerirá el uso de una base de datos no relacional para mantener un buen rendimiento del proyecto.
 - 🟠 **RNF-11:** El chat bot comprendera palabras informales ,asi como modismos.
 - 🟠 **RNF-12:** Los servidores contarán con mantenimiento semanal para evitar fallos en el sistema del chatbot.
 ---
