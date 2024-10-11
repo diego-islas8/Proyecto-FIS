@@ -29,6 +29,7 @@ ___
 - 🟢 **RF-09:** El chatbot debe poder proporcionar enlaces y resúmenes de recursos académicos, como bibliotecas digitales, artículos de investigación y materiales de estudio, en respuesta a las consultas de los estudiantes.
 - 🟢 **RF-10:** Poseerá un filtro de comportamiento inapropiado para evitar el uso incorrecto de la herramienta.
 - 🟢 **RF-11:** Los usuarios administrativos tendran una interfaz diferente.
+- 🟢 **RF-12:** EEl chatbot se podrá conectar al portal SICEI del estudiante interesado, unicamente teniendo acceso al horario, la lista de asignaturas y la lista de profesores.
 
    
 ## ❓ Requisitos no funcionales 
@@ -44,4 +45,5 @@ para que el usuario le haga al ChatBot.
 - 🟠 **RNF-09** El sistema debe ser capaz de manejar al menos 1,000 usuarios simultáneos sin degradar el rendimiento, asegurando una experiencia fluida durante picos de demanda, como la época de inscripciones.
 - 🟠 **RNF-10:** Dado a la magnitud y escalabilidad del proyecto se requerirá el uso de una base de datos no relacional para la mantener un buen rendimiento del proyecto.
 - 🟠 **RNF-11:** El chat bot comprendera palabras informales ,asi como modismos.
+- 🟠 **RNF-11:** Los servidores contarán con mantenimiento semanal para evitar fallos en el sistema del chatbot.
 ---
