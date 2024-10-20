@@ -3,7 +3,7 @@
 ![Diagrama de diseño de datos](./UML.png)
 
 ## Índice
-* ### [Clases de usuario](#clases-de-usuario)
+* ### [Clases de usuario](#clases-de-usuario-1)
     * [Usuario](#usuario)
     * [Miembro](#miembro)
     * [Alumno](#usuario)
@@ -15,10 +15,10 @@
     * [Alumno](#alumno-1)
     * [Asignaturas](#asignaturas)
 * ### [Chatbot Database](#chatbot-database-1)
-    * Conversación
-    * Respuestas
-    * Prompt
-    * Usuarios
+    * [Conversación](#conversación)
+    * [Respuestas](#respuestas)
+    * [Prompt](#prompt)
+    * [Usuarios](#usuarios)
 
 ## Clases de usuario
 Este conjunto de clases hace referencia a los distintos tipos de usuarios presentes en la estructura del proyecto.
