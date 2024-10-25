@@ -6,44 +6,69 @@
 * ### [Clases de usuario](#clases-de-usuario-1)
     * [Usuario](#usuario)
     * [Miembro](#miembro)
-    * [Alumno](#usuario)
+    * [Alumno](#alumno)
     * [Docente](#docente)
     * [Administrativo](#administrativo)
-* ### [ServidorWeb](#servidorweb-1)
-* ### [Chatbot](#chatbot-1)
-* ### [SICEI](#sicei-1)
-    * [Alumno](#alumno-1)
-    * [Asignaturas](#asignaturas)
-* ### [Chatbot Database](#chatbot-database-1)
-    * [Conversación](#conversación)
-    * [Respuestas](#respuestas)
-    * [Prompt](#prompt)
-    * [Usuarios](#usuarios)
+* ### [ServidorWeb](#ServidorWeb)
+* ### [Chatbot](#chatBot)
+* ### [Prompt](#prompt-class)
+* ### [Respuesta](#respuestas)
+* ### [Conversacion](#Conversacion)
 
-## Clases de usuario
+## <label id="clases-de-usuario-1">👥Clases de usuario</label>
 Este conjunto de clases hace referencia a los distintos tipos de usuarios presentes en la estructura del proyecto.
 
-### Usuario
-#### **IDSesion**
-|Tipo de dato|
-|---|
-|Int|
+### <label id="usuario">🟦Usuario</label>
+---
+Esta clase hace referencia a un usuario que no se ha autenticado.
 
-*Descripción*\
-El atributo IDSesion hace referencia al número de la sesión activa actual, con este ID se harán las comunicaciones entre el usuario y el servidor.
+#### 🟢<label id="userid">**ID**</label>
+| Tipo de dato |
+| --- |
+| Int |
 
-#### **preguntar()**
-|Argumento|Tipo de dato|
-|---|---|
-|Prompt| String|
+*Descripción*
 
-#### **iniciarSesion()**
-Esta es una función void que redirecciona al usuario a la pagina de login de Microsoft.
+Identificador del usuario.
 
-### Miembro
-Clase principal de los usuarios que estan autenticados, de la cual derivan las demas.
+#### 🟢**Conversaciones**
+| Tipo de dato |
+| --- |
+| [Conversacion[]](#Conversacion) |
 
-#### **Nombre**
+*Descripción*
+
+Lista de las conversaciones que el usuario ha realizado.
+
+#### 🟢**FechaRegistro**
+| Tipo de dato |
+| --- |
+| Int |
+
+*Descripción*
+
+Tiempo del registro de la cuenta en formato [Unix timestamp](https://en.wikipedia.org/wiki/Unix_time).
+
+#### 🟢**UltimaActividad**
+| Tipo de dato |
+| --- |
+| Int |
+
+*Descripción*
+
+Hora de la ultima actividad de la cuenta en formato [Unix timestamp](https://en.wikipedia.org/wiki/Unix_time).
+
+#### 🟡**preguntar()**
+Función que 
+
+#### 🟡**iniciarSesion()**
+Función que redirecciona al usuario a la pagina de login de Microsoft para proseguir con el proceso de autenticación.
+
+### <label id="miembro">🟦Miembro</label>
+---
+Clase principal de los usuarios que estan autenticados, de la cual derivan las demás.
+
+#### 🟢**Nombre**
 |Tipo de dato|
 |---|
 | String |
@@ -51,7 +76,21 @@ Clase principal de los usuarios que estan autenticados, de la cual derivan las d
 *Descripción*\
 Nombre completo de las personas autenticadas.
 
-#### **Facultad**
+#### 🟢**Correo**
+| Tipo de dato |
+| --- |
+| String |
+
+*Descripción*
+
+Correo del miembro.
+
+*Ejemplo*
+| Valor |
+|---|
+| A20200000@alumnos.uady.mx |
+
+#### 🟢**Facultad**
 | Tipo de dato |
 |---|
 | String |
@@ -66,7 +105,7 @@ Facultad de procedencia del usuario autenticado.
 | Facultad de medicina |
 | Facultad de derecho |
 
-#### **FechaDeInicio**
+#### 🟢**FechaDeInicio**
 | Tipo de dato |
 |---|
 | Int |
@@ -80,50 +119,23 @@ Fecha de inicio de las labores o curso escolar dentro de la institución en form
 | --- | --- |
 | 1723593600 | martes, 13 de agosto de 2024 18:00:00 GMT-06:00 |
 
-#### **Conversaciones**
+#### 🟢**TokensActivos**
 | Tipo de dato |
 | --- |
-| Int[] |
+| String[] |
 
 *Descripción*
 
-Una lista de los ID de las conversaciones que previamente se ha tenido con el ChatBot, con tal ID se puede obtener la información completa de las conversaciones
-
-*Ejemplos*
-| Valor | Representación |
-|---|---|
-| [2, 4, 6] | Hace referencia que las conversaciones con las ID 2, 4 y 6 han sido llevadas por este usuario |
-
-#### **Token**
-| Tipo de dato |
-| --- |
-| String |
-
-*Descripción*
-
-Un token guardada en una cookie generada luego de realizar el proceso de [OAuth de Microsoft](https://learn.microsoft.com/es-es/entra/architecture/auth-oauth2), se utiliza para comprobar la identidad del usuario y apartir de ello acceder a información protegida.
+Una lista de los tokens generados luego de realizar el proceso de [OAuth de Microsoft](https://learn.microsoft.com/es-es/entra/architecture/auth-oauth2), se utiliza para comprobar la identidad del usuario y apartir de ello acceder a información protegida.
 
 *Ejemplo*
 | Valor |
 |---|
 | abcde12345 |
 
-#### **Correo**
-| Tipo de dato |
-|---|
-| String |
-
-*Descripción*
-
-Correo del usuario
-
-*Ejemplo*
-| Valor |
-|---|
-| A20200000@alumnos.uady.mx |
-
-### Alumno
-#### **SemestreEnCurso**
+### <label id="alumno">🟦Alumno</label>
+---
+#### 🟢**SemestreEnCurso**
 | Tipo de dato |
 | --- |
 | Int |
@@ -137,21 +149,21 @@ El número del semestre que actualmente cursa el alumno.
 | --- | --- |
 | 6 | 6to semestre |
 
-#### **Matricula**
+#### 🟢**Matricula**
 | Tipo de dato |
 | --- |
 | String |
 
 *Descripción*
 
-La matricula del alumno.
+La matricula del alumno, es otra forma de identificar al usuario, especificamente a los alumnos.
 
 *Ejemplo*
 | Valor |
 |---|
 | A20200000 |
 
-#### **Créditos**
+#### 🟢**Créditos**
 | Tipo de dato |
 | --- |
 | Int |
@@ -163,48 +175,50 @@ El total de créditos que el alumno ha alcanzado hasta el momento.
 *Ejemplo*
 
 | Valor |
+|---|
 | 15 |
 
-#### **obtenerCalificaciones()**
+#### 🟡**obtenerCalificaciones()**
 *Descripción*
 
 Función que permite obtener al alumno sus calificaciones de las materias a las que se ha inscrito en el semestre en curso.
 
-#### **obtenerHorario()**
+#### 🟡**obtenerHorario()**
 *Descripción*
 
-Función que permite al alumno obtener las horas, salones, y maestros de las materias a las  que se ha inscrito en el semestre en curso.
+Función que permite al alumno obtener las horas, salones, y maestros de las asignaturas a las  que se ha inscrito en el semestre en curso.
 
-#### **obtenerAsignaturas()**
+#### 🟡**obtenerAsignaturas()**
 *Descripción*
 
 Función que regresa las asignaturas que se cursan en el semestre en curso.
 
-### Docente
-#### **Materias**
+### <label id="docente">🟦Docente</label>
+---
+#### 🟢**Asignaturas**
 | Tipo de dato |
 | --- |
 | String[] |
 
 *Descripción*
 
-Una lista de las materias que el docente imparte.
+Una lista de las asignaturas que el docente imparte.
 
 *Ejemplo*
 | Valor |
 | --- |
-| [Calculo diferencial, Calculo Integral] |
+| ["Calculo diferencial", "Calculo Integral"] |
 
-#### **Especialización**
+#### 🟢**TituloProfesional**
 | Tipo de dato |
 | --- |
 | String |
 
 *Descripción*
 
-Especialización del docente.
+Título de profesión del docente.
 
-#### **NumContrato**
+#### 🟢**NumContrato**
 | Tipo de dato |
 | --- |
 | Int |
@@ -213,8 +227,9 @@ Especialización del docente.
 
 El número de contrato del docente.
 
-### Administrativo
-#### **Departamento**
+### <label id="administrativo">🟦Administrativo</label>
+---
+#### 🟢**Departamento**
 | Tipo de dato |
 |---|
 | String |
@@ -223,7 +238,7 @@ El número de contrato del docente.
 
 Departamento al que pertenece el personal administrativo.
 
-#### **Puesto**
+#### 🟢**Puesto**
 | Tipo de dato |
 | --- |
 | String |
@@ -232,7 +247,7 @@ Departamento al que pertenece el personal administrativo.
 
 Puesto administrativo del usuario.
 
-#### **NumContrato**
+#### 🟢**NumContrato**
 | Tipo de dato |
 | --- |
 | Int |
@@ -241,10 +256,10 @@ Puesto administrativo del usuario.
 
 El número de contrato del personal administrativo.
 
-## ServidorWeb
-Clase que interpreta a la entidad del servidor web, la cual maneja las peticiones HTTP.
+## <label id="ServidorWeb">🟦ServidorWeb</label>
+Clase que interpreta a la entidad del servidor web, la cual maneja las peticiones [HTTP](https://developer.mozilla.org/es/docs/Web/HTTP).
 
-### IP
+### 🟢IP
 | Tipo de dato |
 |---|
 | String |
@@ -253,7 +268,7 @@ Clase que interpreta a la entidad del servidor web, la cual maneja las peticione
 
 La IP que va a usar el servidor.
 
-### Port
+### 🟢Port
 | Tipo de dato |
 | --- |
 | Int |
@@ -262,7 +277,7 @@ La IP que va a usar el servidor.
 
 El puerto en el que el servidor web va a funcionar.
 
-### Dominio
+### 🟢Dominio
 | Tipo de dato |
 | --- |
 | String |
@@ -271,25 +286,25 @@ El puerto en el que el servidor web va a funcionar.
 
 Dominio a utilizar para el servidor.
 
-### get()
+### 🟡get()
 *Descripción*
 
-Función que maneja las peticiones `GET` del protocolo HTTP.
+Función que maneja las peticiones [`GET`](https://developer.mozilla.org/es/docs/Web/HTTP/Methods/GET) del protocolo HTTP.
 
-### validarToken()
+### 🟡validarToken()
 *Descripción*
 
-Función que valida el token del OAuth de Microsoft, si determina que es correcto entonces envía una cookie con el token de autenticación para el login del usuario.
+Función que valida el token del [OAuth de Microsoft](https://learn.microsoft.com/es-es/entra/architecture/auth-oauth2), si determina que es correcto entonces envía una cookie con el token de autenticación para el login del usuario.
 
-### post()
+### 🟡post()
 *Descripción*
 
-Función que maneja las peticiones `POST` del protocolo HTTP, funcionará principalmente para recibir los prompts del chatbot.
+Función que maneja las peticiones [`POST`](https://developer.mozilla.org/es/docs/Web/HTTP/Methods/POST) del protocolo HTTP, principalmente para recibir los prompts de los usuarios y redireccionarlas a la clase del [chatBot](#chatBot).
 
-## Chatbot
+## <label id="chatBot">🟦Chatbot</label>
 Clase que maneja todo lo relacionado con la lógica del chatbot.
 
-### Status
+### 🟢Status
 | Tipo de dato |
 |---|
 | Int |
@@ -306,7 +321,7 @@ La disponibilidad del chatbot en el instante.
 | 2 | En mantenimiento |
 
 
-### Lenguajes
+### 🟢Lenguajes
 | Tipo de dato |
 | --- |
 | String[] |
@@ -320,208 +335,43 @@ Array que contiene los lenguajes admitidos por el chatbot.
 | --- |
 | [ Español, Inglés, Maya ] |
 
-### conexionesActivas
+### 🟢conexionesActivas
 | Tipo de dato |
 | --- |
 | Int[] |
 
 *Descripción*
 
-Lista que guarda todas las [IDSesion](#idsesion) activas en este momento.
+Lista que guarda todas los [ID](#userid) de los usuarios que utilizan el servicio en el momento.
 
-### procesarLenguaje()
+### 🟡<label id="procesarLenguaje">procesarLenguaje()</label>
 *Descripción*
 
 Recibe el prompt del usuario y lo analiza, determina en que lenguaje está escrito y qué es lo que requiere.
 
-### obtenerContexto()
+### <label id="obtenerContexto">🟡obtenerContexto()</label>
 *Descripción*
 
 Las conversaciones anteriores que se han tenido con el bot se analizan para obtener el contexto de las partes más importantes y con ello generar una respuesta más precisa.
 
-### consultarSICEI()
+### 🟡consultarSICEI()
 *Descripción*
 
-Función que se encarga de hacer las peticiones a la base datos del [SICEI](#sicei-1).
+Función que se encarga de hacer las peticiones a la base datos del [SICEI](https://www.sicei.uady.mx/).
 
-### generarRespuesta()
+### 🟡generarRespuesta()
 *Descripción*
 
-Con los datos analizados en las funciones [procesarLenguaje()](#procesarlenguaje) y [obtenerContexto()](#obtenercontexto) genera una respuesta que se envía de vuelta al [servidor web](#servidorweb) y posterior a ello se envia la respuesta al usuario.
+Con los datos analizados en las funciones [procesarLenguaje()](#procesarLenguaje) y [obtenerContexto()](#obtenerContexto) genera una respuesta que se envía de vuelta al [servidor web](#ServidorWeb) y posterior a ello se envia la respuesta al usuario.
 
-### ponerEnCola()
+### 🟡ponerEnCola()
 *Descripción*
 
-Si la petición no puede ser procesada en este momento manda la orden de poner en cola al usuario.
+Determina si la petición no puede ser procesada en este momento y manda la orden de poner en cola al usuario.
 
-## SICEI
-Base de datos de la plataforma SICEI
-
-### Alumno
-Entidad alumno de la base de datos.
-
-#### **Nombre**
-| Tipo de dato |
-|---|
-| String |
-
-*Descripción*
-
-Nombre del alumno.
-
-#### **Semestre**
-| Tipo de dato |
-| --- |
-| Int |
-
-*Descripción*
-
-Semestre que el alumno cursa actualmente.
-
-#### **Matricula**
-| Tipo de dato |
-| --- |
-| String |
-
-*Descripción*
-
-Matricula del alumno
-
-#### **AsignaturasCursadas**
-| Tipo de dato |
-| --- |
-| Int[] |
-
-*Descripción*
-
-Lista de los [ID](#asignaturaID) de las asignaturas cursadas.
-
-#### **AsignaturasCursando**
-| Tipo de dato |
-| --- |
-| Int[] |
-
-*Descripción*
-
-Lista de los [ID](#asignaturaID) de las asignaturas que se estan cursando en el semenstre actual.
-
-### Asignaturas
-Tabla de la base de datos que representan las asignaturas.
-
-#### <span id="asignaturaID">**ID**</span>
-| Tipo de dato |
-| --- |
-| Int |
-
-*Descripción*
-
-Número que identifica a la asignatura, funcionando como su identificador.
-
-#### **Nombre**
-| Tipo de dato |
-| --- |
-| String |
-
-*Descripción*
-
-El nombre de la asignatura.
-
-#### **Creditos**
-| Tipo de dato |
-| --- |
-| Int |
-
-*Descripción*
-
-Cantidad de créditos que vale la asignatura.
-
-#### **Semestre**
-| Tipo de dato |
-| --- |
-| Int |
-
-*Descripción*
-
-Semestre a la que la asignatura pertenece.
-
-#### **TipoFormación**
-| Tipo de dato |
-| --- |
-| String |
-
-*Descripción*
-
-El nivel del tipo de formación de la materia, entre los valores `Institucional`, `Disciplinar`, `Especialidad`.
-
-#### **Secuencial**
-| Tipo de dato |
-| --- |
-| Bool |
-
-*Descripción*
-
-Determina si la asignatura es secuencial o no.
-
-#### **AsignaturaPrevia**
-| Tipo de dato |
-| --- |
-| Int |
-
-*Descripción*
-
-Si la asignatura es [secuencial](#secuencial) y tiene una asignatura previa su ID será guardada en esta propiedad.
-
-#### **AsignaturaPosterior**
-| Tipo de dato |
-| --- |
-| Int |
-
-*Descripción*
-
-Si la asignatura es [secuencial](#secuencial) y tiene una asignatura posterior su ID será guardada en esta propiedad.
-
-## ChatBot Database
-Conjunto de entidades que representan los difernetes tipos de tablas a guardar en la base de datos del chatbot.
-
-### Conversación
-#### **ID**
-| Tipo de dato |
-| --- |
-| Int |
-
-*Descripción*
-
-Identificador de la conversación.
-
-#### **Prompts**
-| Tipo de dato |
-| --- |
-| Int[] |
-
-*Descripción*
-
-Lista de [ID](#IDPrompt) de los prompts que va haciendo el usuario en en esa conversación
-
-#### **Historial**
-| Tipo de dato |
-| --- |
-| Int[] |
-
-*Descripción*
-
-Lista de [ID](#IDRespuestas) de las respuestas que el chatBot va generando.
-
-#### **UltimaInteraccion**
-| Tipo de dato |
-| --- |
-| Int |
-
-*Descripción*
-
-Tiempo de la ultima interacción que hubo en esta conversación en [Unix Timestamp](https://en.wikipedia.org/wiki/Unix_time)
-
-### Respuestas
-#### <label id="IDRespuestas">**ID**</label>
+## <label id="prompt-class">🟦Prompt</label>
+Clase que guarda la información relacionada al prompt que un usuario escribe para recibir la respuesta del chatbot.
+### 🟢 ID
 | Tipo de dato |
 | --- |
 | Int |
@@ -530,92 +380,122 @@ Tiempo de la ultima interacción que hubo en esta conversación en [Unix Timesta
 
 Identificador de la respuesta.
 
-#### **Content**
+### 🟢Contenido
 | Tipo de dato |
 | --- |
 | String |
 
 *Descripción*
 
-La cadena de texto generada por el chatbot.
+El texto que el usuario ha introducido.
 
-#### **Rating**
-| Tipo de dato |
-| --- |
-| Int |
-
-*Descripción*
-
-La calificación que el usuario le ha dado a la respuesta.
-
-#### **Lenguaje**
+### 🟢Lenguaje
 | Tipo de dato |
 | --- |
 | String |
 
 *Descripción*
 
-El lenguaje de la respuesta que se generó
+El lenguaje del texto que el usuario introdujo.
 
-### Prompt
-#### <label id="IDPrompt">**ID**</label>
-| Tipo de dato |
-| --- |
-| Int |
-
-*Descripción*
-
-Identificador del prompt.
-
-#### Content
-| Tipo de dato |
-| --- |
-| String |
-
-*Descripción*
-
-Contenido del prompt que el usuario haya perguntado al chatbot
-
-#### Lenguaje
-| Tipo de dato |
-|---|
-| String |
-
-*Descripción*
-El lenguaje empleado en el contenido del prompt
-
-#### Invalid
+### 🟢Inapropiado
 | Tipo de dato |
 | --- |
 | Bool |
 
 *Descripción*
-Determina si el prompt solicitó una información que no se le puede proporcionar.
 
-### Usuarios
-#### **Nombre**
+Determina si la petición del usuario contiene algún contenido inapropiado para el chatbot.
+## <label id="respuestas">🟦Respuesta</label>
+Clase que almacena el contenido y los metadatos de las respuestas generadas por el chatbot.
+
+### 🟢ID
 | Tipo de dato |
 | --- |
-| String |
+| Int |
 
 *Descripción*
 
-Nombre del usuario almacenado en la base de datos.
+Identificador de la respuesta.
 
-#### **TokensActivos**
+### 🟢Resultados
 | Tipo de dato |
 | --- |
 | String[] |
 
 *Descripción*
 
-Lista de los tokens generados para el inicio de sesión del usuario en cuestión
+Una lista con todas las respuestas en formato texto generados por el chatbot.
 
-#### **Conversaciones**
+### 🟢Rating
 | Tipo de dato |
 | --- |
 | Int[] |
 
 *Descripción*
 
-Lista de las [ID](#id-1) de las conversaciones que el usuario ha llevado a cabo.
+Lista con la puntuación que el usuario ha otorgado a una respuesta en especifico.
+
+*Ejemplos*
+| Valor | Representación |
+| --- | --- |
+| -2 | Respuesta no satisfactoria |
+| 0 | Puntuación no otorgada |
+| 2 | Respuesta satisfactoria |
+
+### 🟢Lenguaje
+| Tipo de dato |
+| --- |
+| String |
+
+*Descripción*
+
+El lenguaje en el cual el texto fue generado.
+
+## <label id="Conversacion">🟦Conversacion</label>
+Clase que almacena los [prompts](#prompt-class) y [respuestas](#respuestas) que se han llevado acabo durante una conversación, además de incluir sus metadatos.
+
+### 🟢ID
+| Tipo de dato |
+| --- |
+| Int |
+
+*Descripción*
+
+El identificador de la conversación.
+
+### 🟢Prompts
+| Tipo de dato |
+| --- |
+| [Prompt[]](#prompt-class) |
+
+*Descripción*
+
+Lista con todos los prompts hechos por el [usuario](#usuario) durante la conversación.
+
+### 🟢Historial
+| Tipo de dato |
+| --- |
+| [Respuestas[]](#respuestas) |
+
+*Descripción*
+
+Lista con todas las respuestas generadas por el chatbot durante la conversación.
+
+### 🟢Autor
+| Tipo de dato |
+| --- |
+| Int |
+
+*Descripción*
+
+El [id](#userid) del usuario autor de la conversación.
+
+### 🟢UltimaInteraccion
+| Tipo de dato |
+| --- |
+| Int |
+
+*Descripción*
+
+La hora de la última interacción en esa conversación en formato [Unix timestamp](https://en.wikipedia.org/wiki/Unix_time).
