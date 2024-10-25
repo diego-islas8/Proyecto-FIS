@@ -9,7 +9,7 @@
     * [Alumno](#alumno)
     * [Docente](#docente)
     * [Administrativo](#administrativo)
-* ### [ServidorWeb](#servidor-web-1)
+* ### [ServidorWeb](#servidorweb-1)
 * ### [Chatbot](#chatbot-1)
 * ### [Prompt](#prompt-1)
 * ### [Respuesta](#respuesta-1)
@@ -256,7 +256,7 @@ Puesto administrativo del usuario.
 
 El número de contrato del personal administrativo.
 
-## <label id="servidor-web-1">🟦ServidorWeb</label>
+## <label id="servidorweb-1">🟦ServidorWeb</label>
 Clase que interpreta a la entidad del servidor web, la cual maneja las peticiones [HTTP](https://developer.mozilla.org/es/docs/Web/HTTP).
 
 ### 🟢IP
