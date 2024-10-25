@@ -1,6 +1,14 @@
 # Diseño de datos
 
 ![Diagrama de diseño de datos](./UML.png)
+## Relación con los requisitos
+* 🟢 RF-01: El sistema se conectará con las cuentas institucionales de los estudiantes para acceder a sus datos.
+* 🟢 RF-02: El chatbot debera ser capaz de mantener el contexto de las preguntas para que no sea necesario repetir informacion.
+* 🟢 RF-03: El chatbot podrá aclarar cualquier duda referente a lo académico, desde como funciona el sistema de acreditación de asignaturas hasta el como se realizan ciertos trámites.
+* 🟢 RF-04: El chatbot podra detectar el idioma español, maya e ingles y responder de acuerdo a las necesidades en ese lenguaje.
+* 🟢 RF-07: El chat bot dara un tiempo de espera en caso de no poder con el total de usuarios en linea.
+* 🟢 RF-10: Poseerá un filtro de comportamiento inapropiado para evitar el uso incorrecto de la herramienta.
+* 🟢 RF-12: El chatbot se podrá conectar al portal SICEI del estudiante interesado, unicamente teniendo acceso al horario, la lista de asignaturas y la lista de profesores.
 
 ## Índice
 * ### [Clases de usuario](#clases-de-usuario-1)
@@ -338,11 +346,11 @@ Array que contiene los lenguajes admitidos por el chatbot.
 ### 🟢conexionesActivas
 | Tipo de dato |
 | --- |
-| Int[] |
+| Int |
 
 *Descripción*
 
-Lista que guarda todas los [ID](#userid) de los usuarios que utilizan el servicio en el momento.
+El número de conexiones activas en el chatbot en el momento.
 
 ### 🟡<label id="procesarLenguaje">procesarLenguaje()</label>
 *Descripción*
