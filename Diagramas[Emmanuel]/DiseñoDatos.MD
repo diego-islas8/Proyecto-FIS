@@ -9,11 +9,11 @@
     * [Alumno](#alumno)
     * [Docente](#docente)
     * [Administrativo](#administrativo)
-* ### [ServidorWeb](#ServidorWeb)
-* ### [Chatbot](#chatBot)
-* ### [Prompt](#prompt-class)
-* ### [Respuesta](#respuestas)
-* ### [Conversacion](#Conversacion)
+* ### [ServidorWeb](#servidor-web-1)
+* ### [Chatbot](#chatbot-1)
+* ### [Prompt](#prompt-1)
+* ### [Respuesta](#respuesta-1)
+* ### [Conversacion](#conversacion-1)
 
 ## <label id="clases-de-usuario-1">👥Clases de usuario</label>
 Este conjunto de clases hace referencia a los distintos tipos de usuarios presentes en la estructura del proyecto.
@@ -34,7 +34,7 @@ Identificador del usuario.
 #### 🟢**Conversaciones**
 | Tipo de dato |
 | --- |
-| [Conversacion[]](#Conversacion) |
+| [Conversacion[]](#conversacion-1) |
 
 *Descripción*
 
@@ -256,7 +256,7 @@ Puesto administrativo del usuario.
 
 El número de contrato del personal administrativo.
 
-## <label id="ServidorWeb">🟦ServidorWeb</label>
+## <label id="servidor-web-1">🟦ServidorWeb</label>
 Clase que interpreta a la entidad del servidor web, la cual maneja las peticiones [HTTP](https://developer.mozilla.org/es/docs/Web/HTTP).
 
 ### 🟢IP
@@ -301,7 +301,7 @@ Función que valida el token del [OAuth de Microsoft](https://learn.microsoft.co
 
 Función que maneja las peticiones [`POST`](https://developer.mozilla.org/es/docs/Web/HTTP/Methods/POST) del protocolo HTTP, principalmente para recibir los prompts de los usuarios y redireccionarlas a la clase del [chatBot](#chatBot).
 
-## <label id="chatBot">🟦Chatbot</label>
+## <label id="chatbot-1">🟦Chatbot</label>
 Clase que maneja todo lo relacionado con la lógica del chatbot.
 
 ### 🟢Status
@@ -369,7 +369,7 @@ Con los datos analizados en las funciones [procesarLenguaje()](#procesarLenguaje
 
 Determina si la petición no puede ser procesada en este momento y manda la orden de poner en cola al usuario.
 
-## <label id="prompt-class">🟦Prompt</label>
+## <label id="prompt-1">🟦Prompt</label>
 Clase que guarda la información relacionada al prompt que un usuario escribe para recibir la respuesta del chatbot.
 ### 🟢 ID
 | Tipo de dato |
@@ -406,7 +406,7 @@ El lenguaje del texto que el usuario introdujo.
 *Descripción*
 
 Determina si la petición del usuario contiene algún contenido inapropiado para el chatbot.
-## <label id="respuestas">🟦Respuesta</label>
+## <label id="respuesta-1">🟦Respuesta</label>
 Clase que almacena el contenido y los metadatos de las respuestas generadas por el chatbot.
 
 ### 🟢ID
@@ -452,8 +452,8 @@ Lista con la puntuación que el usuario ha otorgado a una respuesta en especific
 
 El lenguaje en el cual el texto fue generado.
 
-## <label id="Conversacion">🟦Conversacion</label>
-Clase que almacena los [prompts](#prompt-class) y [respuestas](#respuestas) que se han llevado acabo durante una conversación, además de incluir sus metadatos.
+## <label id="conversacion-1">🟦Conversacion</label>
+Clase que almacena los [prompts](#prompt-1) y [respuestas](#respuesta-1) que se han llevado acabo durante una conversación, además de incluir sus metadatos.
 
 ### 🟢ID
 | Tipo de dato |
@@ -467,7 +467,7 @@ El identificador de la conversación.
 ### 🟢Prompts
 | Tipo de dato |
 | --- |
-| [Prompt[]](#prompt-class) |
+| [Prompt[]](#prompt-1) |
 
 *Descripción*
 
@@ -476,7 +476,7 @@ Lista con todos los prompts hechos por el [usuario](#usuario) durante la convers
 ### 🟢Historial
 | Tipo de dato |
 | --- |
-| [Respuestas[]](#respuestas) |
+| [Respuesta[]](#respuesta-1) |
 
 *Descripción*
 
