@@ -3,5 +3,5 @@
 
 ---
 
-<p>![DiagramaUML]<a href="https://alumnosuady-my.sharepoint.com/personal/a19203818_alumnos_uady_mx/Documents/Captura%20de%20pantalla%202024-10-25%20092101.png">Diseño de datos</a></p>
+<p>![DiagramaUML]<a href="(https://alumnosuady-my.sharepoint.com/:i:/g/personal/a19203818_alumnos_uady_mx/Ea63p903p39BkLLE-JB1haAB09JxKTCQN3C4NJ-v9mTuXg)">Diseño de datos</a></p>
 
