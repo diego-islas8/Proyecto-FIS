@@ -47,3 +47,12 @@ para que el usuario le haga al ChatBot.
 - 🟠 **RNF-11:** El chat bot comprendera palabras informales ,asi como modismos.
 - 🟠 **RNF-12:** Los servidores contarán con mantenimiento semanal para evitar fallos en el sistema del chatbot.
 ---
+
+# 🗺️ Diagramas
+
+## 🔹 Emmanuel Adrian Flores Noh
+* [🔶 UML](./Diagramas/Emmanuel/DiseñoDatos.MD)
+
+# 💻 Interfaz
+
+* [🔑 Inicio de sesión](./Interfaz/Emmanuel/README.MD)
