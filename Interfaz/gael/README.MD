@@ -4,4 +4,4 @@
 
 [Archivo de edicion (Backup)](./frontpage.fig)
 
-<small>Autor: Emmanuel Adrian Flores Noh</small>
+<small>Autor: Gael Antonio Ayuso Contreras </small>
