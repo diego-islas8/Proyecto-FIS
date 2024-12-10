@@ -4,10 +4,16 @@
 ___
 ## Índice
 - [🚀 Chatbot UADY -\>](#-chatbot-uady--)
+  - [Índice](#índice)
   - [🧾 Descripción del proyecto](#-descripción-del-proyecto)
-  - [🎯 Requisitos](#-requisitos)
-    - [✅ Requisitos funcionales](#-requisitos-funcionales)
-    - [❓ Requisitos no funcionales](#-requisitos-no-funcionales)
+- [🎯 Requisitos](#-requisitos)
+  - [✅ Requisitos funcionales](#-requisitos-funcionales)
+  - [❓ Requisitos no funcionales](#-requisitos-no-funcionales)
+- [🗺️ Diagramas](#️-diagramas)
+  - [🔹 Gael Antonio Ayuso Contreras](#-gael-antonio-ayuso-contreras)
+- [💻 Interfaz](#-interfaz)
+  - [🔹 Emmanuel Adrian Flores Noh](#-emmanuel-adrian-flores-noh)
+- [💻 Interfaz](#-interfaz-1)
 
 ---
 ## 🧾 Descripción del proyecto
@@ -49,6 +55,13 @@ para que el usuario le haga al ChatBot.
 ---
 
 # 🗺️ Diagramas
+
+## 🔹 Gael Antonio Ayuso Contreras
+* [🔶 c4](./Diagramas/gael/diagrama.md)
+
+# 💻 Interfaz
+
+* [🔑 Frontpage](./Interfaz/gael/README.MD)
 
 ## 🔹 Emmanuel Adrian Flores Noh
 * [🔶 UML](./Diagramas/Emmanuel/DiseñoDatos.MD)
